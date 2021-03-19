@@ -1,0 +1,43 @@
+/*клиенты*/
+
+.clients__container {
+    padding-top: var(--big-size);
+    padding-bottom: var(--big-size);
+}
+
+.clients__title {
+    margin-bottom: 50px;
+
+    font-weight: 700px;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.clients__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    fill: var(--social-networks);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: color var(--time) var(--function),
+        fill var(--time) var(--function),
+        border-color var(--time) var(--function);
+
+    &:hover,
+    &:focus {
+        color: var(--blue-color);
+        fill: currentColor;
+        border-color: currentColor;
+        outline: none;
+    }
+}

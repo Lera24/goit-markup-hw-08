@@ -1,0 +1,35 @@
+/*стили футера*/
+
+.foot {
+    background-color: var(--background-color);
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.foot__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: calc(2 * var(--small-size));
+    padding-bottom: calc(2 * var(--small-size));
+}
+
+.address {
+    padding-bottom: 9px;
+    color: var(--white-color);
+    letter-spacing: 0.03em;
+}
+
+.address__title {
+    padding-bottom: 9px;
+}
+
+.address__item {
+    &:not(:first-child) {
+        margin-top: 9px;
+    }
+}
+
+.address__link {
+    color: var(--color-adress);
+}

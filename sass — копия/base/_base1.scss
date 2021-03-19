@@ -1,0 +1,58 @@
+111111html {
+    box-sizing: border-box;
+}
+
+111111*,
+1111*:after,
+11111*:before {
+    box-sizing: inherit;
+}
+
+11111ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+1111111a {
+    text-decoration: none;
+}
+
+222222address {
+    font-style: normal;
+}
+
+11111111h1,
+111h2,
+111h3,
+111h4,
+111p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+111111.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    222222margin: 0 auto;222222
+}
+
+/*скрытие заголовка*/
+
+1111111111.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}

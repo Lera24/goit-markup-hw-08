@@ -1,0 +1,30 @@
+/*общая разметка бекдропа*/
+
+.backdrop {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--color-backdrop);
+
+    transition: background-color var(--time) var(--function);
+}
+
+.backdrop--hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: background-color var(--time) var(--function),
+        opacity var(--time) var(--function);
+}
+
+.backdrop__background {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    background-color: var(--white-color);
+}

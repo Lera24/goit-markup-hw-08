@@ -1,0 +1,46 @@
+/*радиокнопки*/
+
+.filter {
+    padding-top: var(--big-size);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter__button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    border-radius: 4px;
+    border: transparent;
+
+    background-color: var(--background-color-team);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    font-family: inherit;
+
+    transition: color var(--time) var(--function),
+        background-color var(--time) var(--function),
+        border-radius var(--time) var(--function),
+        box-shadow var(--time) var(--function);
+
+    &:hover,
+    &:focus {
+        color: var(--white-color);
+        background-color: var(--blue-color);
+        border-radius: 4px;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        outline: none;
+    }
+}
+
+.filter__item {
+    &:not(:first-child) {
+        margin-left: 8px;
+    }
+}

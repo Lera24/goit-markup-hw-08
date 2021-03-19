@@ -1,0 +1,31 @@
+/*разметка героя*/
+.main {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+    height: 600px;
+
+    background-color: var(--background-color);
+    text-align: center;
+    color: var(--white-color);
+    background-image: linear-gradient(
+            to right,
+            var(--gradient-color),
+            var(--gradient-color)
+        ),
+        url('../images/hero.jpg');
+    background-position: center;
+}
+
+.main__desk {
+    padding-left: 270px;
+    padding-right: 270px;
+    margin-bottom: var(--small-size);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-transform: uppercase;
+}

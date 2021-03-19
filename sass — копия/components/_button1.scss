@@ -1,0 +1,36 @@
+/*кнопки*/
+
+.button {
+    display: inline-block;
+    padding-top: var(--tiny-size);
+    padding-bottom: var(--tiny-size);
+    padding-right: 32px;
+    padding-left: 32px;
+    border-radius: 4px;
+    border: transparent;
+    width: 200px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: var(--small-size);
+    color: var(--white-color);
+    background-color: var(--blue-color);
+
+    box-shadow: 0px 4px 4px var(--shadow-color);
+}
+
+.button--center {
+    margin: 0 auto;
+}
+
+.foot-form__button {
+    position: relative;
+    padding-right: 62px;
+    padding-left: 29px;
+}
+
+.foot-form__img {
+    position: absolute;
+    transform: translateX(10px);
+    fill: currentColor;
+}

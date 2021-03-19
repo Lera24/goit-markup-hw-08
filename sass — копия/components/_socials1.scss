@@ -1,0 +1,66 @@
+/*общие соцсети*/
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 16px;
+    padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.socials__item {
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+.socials__link {
+    display: flex;
+    padding: 12px;
+    fill: var(--social-networks);
+
+    transition: border-radius var(--time) var(--function),
+        background-color var(--time) var(--function),
+        color var(--time) var(--function), fill var(--time) var(--function);
+
+    &:hover,
+    &:focus {
+        border-radius: 50%;
+        background-color: var(--blue-color);
+        color: var(--white-color);
+        fill: currentColor;
+        outline: none;
+    }
+}
+
+/*соцсети в футере*/
+
+.socials-foot__socials {
+    padding: 0;
+}
+
+.socials-foot__title {
+    margin-bottom: 20px;
+    /* margin-left: 50px;*/
+    text-transform: uppercase;
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--white-color);
+}
+
+.socials-foot__link {
+    background-color: var(--graphite-color);
+    border-radius: 50%;
+    fill: var(--white-color);
+
+    transition: background-color var(--time) var(--function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--blue-color);
+    }
+}

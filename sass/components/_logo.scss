@@ -1,0 +1,29 @@
+/*стили логотипа*/
+
+.logo__link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    color: var(--blue-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.logo--top {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.logo--bottom {
+    margin-bottom: 20px;
+}
+
+.logo__text--black {
+    color: var(--black-color);
+}
+
+.logo__text--white {
+    color: var(--white-color);
+}
