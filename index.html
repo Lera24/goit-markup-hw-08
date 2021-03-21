@@ -15,10 +15,39 @@
     <header class="head">
         <div class="container head__container">
             <nav class="nav">
-                <div class="logo logo--top">
-					<a href="./index.html" class="logo__link">Web<span class="logo__text logo__text--black">Studio</span>
-					</a>
-				</div>
+                <div class="head__mobile">
+                    <div class="logo logo--top">
+                        <a href="./index.html" class="logo__link">Web<span class="logo__text logo__text--black">Studio</span>
+                        </a>
+                    </div>
+                    <button type="button" class="button-menu" aria-expanded="false" aria-controls="menu">
+                        <svg width="40px" height="40px" aria-label="Переключатель меню">
+                            <use href="./images/icons.svg#menu" class="button-menu button-menu--open js-open-menu"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="mobile js-menu-container" id="menu" aria-expanded="false">
+                    <button type="button" class="button-menu mobile__botton js-menu-container" aria-expanded="false" aria-controls="menu">
+                       <svg width="40px" height="40px" aria-label="Переключатель меню">
+                            <use href="./images/icons.svg#close-menu" class="button-menu button-menu--close js-close-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-pages">
+                        <li class="mobile-pages__item"><a href="./index.html" class="mobile-pages__link mobile-pages__link--active">Cтудия</a></li>
+                        <li class="mobile-pages__item"><a href="./portfolio.html" class="mobile-pages__link">Портфолио</a></li>
+                        <li class="mobile-pages__item"><a href="#" class="mobile-pages__link">Контакты</a></li>
+                    </ul>
+                    <ul class="mobile-contacts">
+                        <li class="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__tel">+38 096 111 11 11</a></li>
+                        <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile-socials">
+                        <li class="mobile-socials__item"><a class="mobile-socials__link">Instagram</a></li>
+                        <li class="mobile-socials__item"><a class="mobile-socials__link">Twitter</a></li>
+                        <li class="mobile-socials__item"><a class="mobile-socials__link">Facebook</a></li>
+                        <li class="mobile-socials__item"><a class="mobile-socials__link">Linkedin</a></li>
+                    </ul>
+                </div>
                 <ul class="nav-pages">
 						<li class="nav-pages__item"><a href="./index.html" class="nav-pages__link nav-pages__link--active">Студия</a></li>
 						<li class="nav-pages__item"><a href="./portfolio.html" class="nav-pages__link">Портфолио</a></li>
@@ -28,14 +57,14 @@
             <ul class="nav-contacts">
                 <li class="nav-contacts__item">
                     <a href="mailto:info@devstudio.com" class="nav-contacts__link">
-                        <svg class="nav-contacts__img" width="16px" height="12px">
+                        <svg class="nav-contacts__img" width="14px" height="10px">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                     info@devstudio.com</a>
                 </li>
                 <li class="nav-contacts__item">
                     <a href="tel:+380961111111" class="nav-contacts__link">
-                        <svg class="nav-contacts__img" width="10px" height="16px">
+                        <svg class="nav-contacts__img" width="10px" height="14px">
                             <use href="./images/icons.svg#icon-mobile"></use>
                         </svg>
                     +38 096 111 11 11</a>
@@ -120,7 +149,11 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__photo" src="./images/igor.jpg" alt="фото_дизайнера" width="270">
+                        <img class="team__photo" 
+                        src="./images/igor.jpg"
+                        srcset="./images/igor@2x.jpg 2x" 
+                        alt="фото_дизайнера" 
+                        width="450">
                         <h3 class="team__name">Игорь Демьяненко</h3>
                         <p class="team__position">Product Designer</p>
                         <ul class="socials">
@@ -155,7 +188,11 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./images/olga.jpg" alt="фото_разработчика" width="270">
+                        <img class="team__photo" 
+                        src="./images/olga.jpg"
+                        srcset="./images/olga@2x.jpg 2x" 
+                        alt="фото_разработчика" 
+                        width="450">
                         <h3 class="team__name">Ольга Репина</h3>
                         <p class="team__position">Frontend Developer</p>
                         <ul class="socials">
@@ -190,7 +227,11 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./images/kolya.jpg" alt="фото_маркетолога" width="270">
+                        <img class="team__photo" 
+                        src="./images/kolya.jpg"
+                        srcset="./images/kolya@2x.jpg 2x" 
+                        alt="фото_маркетолога" 
+                        width="450">
                         <h3 class="team__name">Николай Тарасов</h3>
                         <p class="team__position">Marketing</p>
                         <ul class="socials">
@@ -225,7 +266,11 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img class="team__photo" src="./images/misha.jpg" alt="фото_дизайнера_2" width="270">
+                        <img class="team__photo" 
+                        src="./images/misha.jpg"
+                        srcset="./images/misha@2x.jpg 2x" 
+                        alt="фото_дизайнера2" 
+                        width="450">
                         <h3 class="team__name">Михаил Ермаков</h3>
                         <p class="team__position">UI Designer</p>
                         <ul class="socials">
@@ -419,6 +464,7 @@
 			</form>
 		</div>
 	</div>
+    <script src="./mobile-menu.js"></script>
 	<script src="./modal.js"></script>
 </body>
 </html>

@@ -12,37 +12,65 @@
 </head>
 <body>
 	<header class="head">
-		<div class="container head__container">
-			<nav class="nav">
-				<div class="logo logo--top">
-					<a href="./index.html" class="logo__link">Web<span class="logo__text logo__text--black">Studio</span>
-					</a>
-				</div>
-				<ul class="nav-pages">
-					<li class="nav-pages__item"><a href="./index.html"
-							class="nav-pages__link">Студия</a></li>
-					<li class="nav-pages__item"><a href="./portfolio.html" class="nav-pages__link nav-pages__link--active">Портфолио</a></li>
-					<li class="nav-pages__item"><a href="#" class="nav-pages__link">Контакты</a></li>
+        <div class="container head__container">
+            <nav class="nav">
+                <div class="head__mobile">
+                    <div class="logo logo--top">
+                        <a href="./index.html" class="logo__link">Web<span class="logo__text logo__text--black">Studio</span>
+                        </a>
+                    </div>
+                    <button type="button" class="button-menu" aria-expanded="false" aria-controls="menu">
+                        <svg width="40px" height="40px" aria-label="Переключатель меню">
+                            <use href="./images/icons.svg#menu" class="button-menu button-menu--open js-open-menu"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="mobile js-menu-container" id="menu" aria-expanded="false">
+                    <button type="button" class="button-menu mobile__botton js-menu-container" aria-expanded="false" aria-controls="menu">
+                       <svg width="40px" height="40px" aria-label="Переключатель меню">
+                            <use href="./images/icons.svg#close-menu" class="button-menu button-menu--close js-close-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-pages">
+                        <li class="mobile-pages__item"><a href="./index.html" class="mobile-pages__link">Cтудия</a></li>
+                        <li class="mobile-pages__item"><a href="./portfolio.html" class="mobile-pages__link mobile-pages__link--active">Портфолио</a></li>
+                        <li class="mobile-pages__item"><a href="#" class="mobile-pages__link">Контакты</a></li>
+                    </ul>
+                    <ul class="mobile-contacts">
+                        <li class="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__tel">+38 096 111 11 11</a></li>
+                        <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile-socials">
+                        <li class="mobile-socials__item"><a class="mobile-socials__link">Instagram</a></li>
+                        <li class="mobile-socials__item"><a class="mobile-socials__link">Twitter</a></li>
+                        <li class="mobile-socials__item"><a class="mobile-socials__link">Facebook</a></li>
+                        <li class="mobile-socials__item"><a class="mobile-socials__link">Linkedin</a></li>
+                    </ul>
+                </div>
+                <ul class="nav-pages">
+						<li class="nav-pages__item"><a href="./index.html" class="nav-pages__link nav-pages__link--active">Студия</a></li>
+						<li class="nav-pages__item"><a href="./portfolio.html" class="nav-pages__link">Портфолио</a></li>
+						<li class="nav-pages__item"><a href="#" class="nav-pages__link">Контакты</a></li>
 				</ul>
-			</nav>
-			<ul class="nav-contacts">
-				<li class="nav-contacts__item">
-					<a href="mailto:info@devstudio.com" class="nav-contacts__link">
-						<svg class="nav-contacts__img" width="16px" height="12px">
-							<use href="./images/icons.svg#icon-mail"></use>
-						</svg>
-						info@devstudio.com</a>
-				</li>
-				<li class="nav-contacts__item">
-					<a href="tel:+380961111111" class="nav-contacts__link">
-						<svg class="nav-contacts__img" width="10px" height="16px">
-							<use href="./images/icons.svg#icon-mobile"></use>
-						</svg>
-						+38 096 111 11 11</a>
-				</li>
-			</ul>
-		</div>
-	</header>
+            </nav>
+            <ul class="nav-contacts">
+                <li class="nav-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="nav-contacts__link">
+                        <svg class="nav-contacts__img" width="16px" height="12px">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                    info@devstudio.com</a>
+                </li>
+                <li class="nav-contacts__item">
+                    <a href="tel:+380961111111" class="nav-contacts__link">
+                        <svg class="nav-contacts__img" width="10px" height="16px">
+                            <use href="./images/icons.svg#icon-mobile"></use>
+                        </svg>
+                    +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <main>
         <section class="portfolio">
             <div class="container">
@@ -68,7 +96,10 @@
             <!--Результат работы фильтра-->
                 <ul class="portfolio__list">
                     <li class="portfolio__item">
-                        <img src="./images/технокряк(1).jpg" alt="веб-сайт1" width="370">
+                        <img src="./images/технокряк(1).jpg" 
+						srcset="./images/технокряк(1)@2x.jpg 2x" 
+						alt="веб-сайт1" 
+						width="450">
 						<div class="portfolio__wrap">
                             <h2 class="portfolio__title">Технокряк</h2>
                             <p class="portfolio__subtitle">Веб-сайт</p>
@@ -78,7 +109,10 @@
 							шпионажа и атак на защищённые сервера конкурентов.</p>
                     </li>
                     <li class="portfolio__item">
-                        <img src="./images/постер(2).jpg" alt="дизайн1" width="370">
+                        <img src="./images/постер(2).jpg" 
+						srcset="./images/постер(2)@2x.jpg 2x"
+						alt="дизайн1" 
+						width="450">
                         <div class="portfolio__wrap">
                             <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
                             <p class="portfolio__subtitle">Дизайн</p>
@@ -88,7 +122,10 @@
 							шпионажа и атак на защищённые сервера конкурентов.</p>
                     </li>
                     <li class="portfolio__item">
-                        <img src="./images/ресторан(3).jpg" alt="приложение1" width="370">
+                        <img src="./images/ресторан(3).jpg"
+						srcset="./images/ресторан(3)@2x.jpg 2x"
+						alt="приложение1" 
+						width="450">
                         <div class="portfolio__wrap">
                             <h2 class="portfolio__title">Ресторан Seafood</h2>
                             <p class="portfolio__subtitle">Приложение</p>
@@ -98,7 +135,10 @@
 							шпионажа и атак на защищённые сервера конкурентов.</p>
                     </li>
                     <li class="portfolio__item">
-                        <img src="./images/проект-прайм(4).jpg" alt="маркетинг" width="370">
+                        <img src="./images/проект-прайм(4).jpg" 
+						srcset="./images/проект-прайм(4)@2x.jpg 2x"
+						alt="маркетинг" 
+						width="450">
                         <div class="portfolio__wrap">
                             <h2 class="portfolio__title">Проект Prime</h2>
                             <p class="portfolio__subtitle">Маркетинг</p>
@@ -108,7 +148,10 @@
 							шпионажа и атак на защищённые сервера конкурентов.</p>
                     </li>
                     <li class="portfolio__item">
-                        <img src="./images/коробки(5).jpg" alt="приложение2" width="370">
+                        <img src="./images/коробки(5).jpg" 
+						srcset="./images/коробки(5)@2x.jpg 2x"
+						alt="приложение2" 
+						width="450">
                         <div class="portfolio__wrap">
                             <h2 class="portfolio__title">Проект Boxes</h2>
                             <p class="portfolio__subtitle">Приложение</p>
@@ -118,7 +161,10 @@
 							шпионажа и атак на защищённые сервера конкурентов.</p>
                     </li>
                     <li class="portfolio__item">
-                        <img src="./images/бордерс(6).jpg" alt="веб-сайт2" width="370">
+                        <img src="./images/бордерс(6).jpg" 
+						srcset="./images/бордерс(6)@2x.jpg 2x"
+						alt="веб-сайт2" 
+						width="450">
                         <div class="portfolio__wrap">
                             <h2 class="portfolio__title">Inspiration has no Borders</h2>
                             <p class="portfolio__subtitle">Веб-сайт</p>
@@ -126,7 +172,10 @@
 						<p class="portfolio__desk">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     </li>
                     <li class="portfolio__item">
-                        <img src="./images/издание(7).jpg" alt="дизайн2" width="370">
+                        <img src="./images/издание(7).jpg" 
+						srcset="./images/издание(7)@2x.jpg 2x"
+						alt="дизайн2" 
+						width="450">
                         <div class="portfolio__wrap">
                             <h2 class="portfolio__title">Издание Limited Edition</h2>
                             <p class="portfolio__subtitle">Дизайн</p>
@@ -136,7 +185,10 @@
 							шпионажа и атак на защищённые сервера конкурентов.</p>
                     </li>
                     <li class="portfolio__item">
-                        <img src="./images/лаб(8).jpg" alt="маркетинг2" width="370">
+                        <img src="./images/лаб(8).jpg"
+						srcset="./images/лаб(8)@2x.jpg 2x" 
+						alt="маркетинг2" 
+						width="450">
                         <div class="portfolio__wrap">
                             <h2 class="portfolio__title">Проект LAB</h2>
                             <p class="portfolio__subtitle">Маркетинг</p>
@@ -146,7 +198,10 @@
 							шпионажа и атак на защищённые сервера конкурентов.</p>
                     </li>
                     <li class="portfolio__item">
-                        <img src="./images/приложение(9).jpg" alt="приложение3" width="370">
+                        <img src="./images/приложение(9).jpg" 
+						srcset="./images/приложение(9)@2x.jpg 2x"
+						alt="приложение3" 
+						width="450">
                         <div class="portfolio__wrap">
                             <h2 class="portfolio__title">Growing Business</h2>
                             <p class="portfolio__subtitle">Приложение</p>
@@ -220,5 +275,6 @@
 			</form>
 		</div>
 	</footer>
+	<script src="./mobile-menu.js"></script>
 </body>
 </html>

@@ -18,14 +18,16 @@
 
 .address__title {
     padding-bottom: 8px;
+    font-style: normal;
 }
 
 .address__item {
-    &:not(:first-child) {
-        margin-top: 8px;
+    &:first-child {
+        margin-bottom: 8px;
     }
 }
 
 .address__link {
     color: var(--color-adress);
+    font-style: normal;
 }

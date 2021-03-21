@@ -1,6 +1,6 @@
 .clients__container {
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 .clients__title {
@@ -16,6 +16,12 @@
     width: calc((100% - 2 * 15px) / 2);
     margin-right:  15px;
     margin-bottom: 30px;
+}
+
+.client__item {
+    &:nth-child(n + 5) {
+        margin-bottom: 0;
+    }
 }
 
 .clients__list {

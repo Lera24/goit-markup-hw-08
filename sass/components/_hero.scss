@@ -15,8 +15,14 @@
             var(--gradient-color),
             var(--gradient-color)
         ),
-        url('../images/hero.jpg');
+        url('/images/hero.jpg');
     background-position: center;
+    
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi) {
+        background-image: url('/images/hero@2x.png');
+        background-size: contain;
+    }
 }
 
 .main__desk {
