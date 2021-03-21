@@ -10,10 +10,21 @@
     text-align: center;
 }
 
+.foot__wrap {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    }
+}
+
 .address {
     color: var(--white-color);
     letter-spacing: 0.03em;
     margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 61px;
+        margin-right: 165px;
+    }
 }
 
 .address__title {

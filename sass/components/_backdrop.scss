@@ -13,6 +13,14 @@
     padding-left: 15px;
     padding-right: 15px;
     overflow-y: scroll;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 208px;
+        padding-bottom: 207px;
+        padding-left: 159px;
+        padding-right: 159px;
+    }
+
 }
 
 .backdrop--hidden {

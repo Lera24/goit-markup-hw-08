@@ -3,6 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 25px;
+        justify-content: center;
+    }
 }
 
 .filter__button {
@@ -45,9 +50,15 @@
 
     &:nth-child(4) {
         margin-left: 0;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 8px;
+        }
     }
 
     &:not(:nth-child(n + 4)) {
         margin-bottom: 15px;
     }
+
+    
 }
