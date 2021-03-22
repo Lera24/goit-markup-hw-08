@@ -54,6 +54,11 @@
 
 /*разметка меню*/
 
+.head__mobile {
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
 .mobile {
     display: none;
     position: absolute;

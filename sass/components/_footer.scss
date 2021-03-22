@@ -8,12 +8,25 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        text-align:start;
+       /* align-items: baseline;*/
+        justify-content: space-between;
+        padding-top: calc(2 * var(--small-size));
+        padding-bottom: calc(2 * var(--small-size));
+    }
 }
 
 .foot__wrap {
     @media screen and (min-width: 768px) {
     display: flex;
     }
+
+    /*@media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }*/
 }
 
 .address {
@@ -23,12 +36,20 @@
 
     @media screen and (min-width: 768px) {
         margin-left: 61px;
-        margin-right: 165px;
+        margin-right: auto;
+        padding-bottom: 9px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+        margin-right: 70px;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
 .address__title {
-    padding-bottom: 8px;
+    padding-bottom: 9px;
     font-style: normal;
 }
 

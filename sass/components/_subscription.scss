@@ -1,3 +1,6 @@
+.foot-form {
+    margin-left: 93px;
+}
 
 .foot-form__input {
     display: block;
@@ -15,6 +18,12 @@
     filter: drop-shadow(0px 4px 4px var(--shadow-footer));
     border-radius: 4px;
     outline: none;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+        display: inline;
+    }
 }
 
 .foot-form__input {
