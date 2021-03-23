@@ -1,33 +1,31 @@
 /*разметка особенностей*/
 
 .features__list {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: $big-size-mobile;
+    padding-top: $big-size-mobile;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         justify-content: space-between;
         padding-bottom: 93px;
         padding-top: 93px;
     }
 }
-/**/
 
 .features__img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: var(--small-size);
+    margin-bottom: $small-size;
     border-radius: 4px;
     height: 120px;
 
-    background-color: var(--background-color-team);
+    background-color: $background-color-team;
 }
-/**/
 
 .features__title {
     font-weight: 700;
@@ -36,33 +34,31 @@
     margin-bottom: 10px;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         text-align: start;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 17px;
     }
 }
-/**/
 
 .features__desc {
     font-weight: 400;
     line-height: 24px;
-    color: var(--grey-color);
+    color: $grey-color;
 }
-/**/
 
 .features__item {
     width: 100%;
     margin-right:  15px;
-    margin-bottom: 30px;
+    margin-bottom: $small-size;
 
     &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: $small-size;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: calc((100% - 2 * 15px) / 2);
 
         &:nth-child(n + 3) {
@@ -75,8 +71,9 @@
         } 
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: calc((100% - 8 * 15px) / 4);
+        margin-right: 0;
 
         &:not(:first-child) {
             margin-left: 30px;
@@ -87,33 +84,4 @@
         }
     }
 }
-/**/
-
-/*.features__item {
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 768px) {
-        &:nth-child(n + 3) {
-            margin-bottom: 0;
-        } 
-
-        &:nth-child(2n) {
-            margin-right: 0;
-            margin-left: 15px;
-        } 
-    }
-
-    @media screen and (min-width: 1200px) {
-        &:not(:first-child) {
-            margin-left: 30px;
-        }
-
-        &:not(:last-child) {
-            margin-bottom: 0;
-        }
-    }
-}*/
-
 

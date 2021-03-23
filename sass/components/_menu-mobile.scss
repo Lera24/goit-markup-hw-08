@@ -1,19 +1,19 @@
 /*разметка кнопки*/
 
 .button-menu {
-    fill: rgba(33, 33, 33, 1);
-    /*margin: 0;
-    padding: 0;*/
+    fill: $main-color;
+    margin: 0;
+    padding: 0;
     margin-left: 276px;
     border: none;
     background-color: transparent;
 
     &:hover,
     &:focus {
-        fill: var(--blue-color);
+        fill: $blue-color;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: none;
     }
 }
@@ -43,11 +43,11 @@
 .mobile__botton {
     position: absolute;
     right: 16px;
-    top: 10px;
+    top: $tiny-size;
 }
 
 .button-menu--close {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: none;
     }
 }
@@ -56,7 +56,6 @@
 
 .head__mobile {
     display: flex;
-    /*justify-content: space-between;*/
 }
 
 .mobile {
@@ -66,7 +65,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--white-color);
+    background-color: $white-color;
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -76,7 +75,7 @@
         display: block;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: none;
     }
 }
@@ -87,7 +86,7 @@
 
 .mobile-pages__link {
     display: block;
-    color: var(--main-color);
+    color: $main-color;
     font-size: 40px;
     line-height: 47px;
 }
@@ -100,7 +99,7 @@
 }
 
 .mobile-pages__link--active {
-    color: var(--blue-color);
+    color: $blue-color;
 }
 
 /*разметка контактов*/
@@ -110,35 +109,31 @@
 }
 
 .mobile-contacts__tel {
-        color: var(--blue-color);
+        color: $blue-color;
         font-size: 34px;
         line-height: 40px;
     }
 
 .mobile-contacts__mail {
-        color: var(--grey-color);
+        color: $grey-color;
         font-size: 34px;
         line-height: 40px;
     }
 
 .mobile-socials {
     display: flex;
-    color: var(--blue-color);
+    color: $blue-color;
     font-size: 18px;
     line-height: 22px;
 }
 
 .mobile-socials__item {
     &:not(:last-child) {
-        padding-right: 10px;
-        border-right: 1px solid var(--input-color);
+        padding-right: $tiny-size;
+        border-right: 1px solid $input-color;
     }
-}
 
-.mobile-socials__item {
     &:not(:first-child) {
-        padding-left: 10px;
+        padding-left: $tiny-size;
     }
 }
-
-

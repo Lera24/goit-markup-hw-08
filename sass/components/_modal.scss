@@ -1,34 +1,32 @@
 .modal__cross {
     position: absolute;
     transform: translate(412px, 8px);
-    height: var(--small-size);
-    width: var(--small-size);
+    height: $small-size;
+    width: $small-size;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--backdrop-buttom);
-    background-color: var(--white-color);
+    border: 1px solid $backdrop-buttom;
+    background-color: $white-color;
     border-radius: 50%;
 
-    transition: fill var(--time) var(--function);
+    transition: fill $time $function;
 
     &:hover,
     &:focus {
-        fill: var(--blue-color);
+        fill: $blue-color;
     }
 }
 
 .modal__img {
-    color: var(--black-color);
+    color: $black-color;
 }
 
 .modal__wrap {
     display: flex;
     flex-direction: column;
     padding: 40px;
-    /*margin-bottom: 93px;
-    margin-top: 93px;*/
 }
 
 .modal__title {
@@ -46,7 +44,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: var(--grey-color);
+    color: $grey-color;
 }
 
 .modal__inner {
@@ -57,39 +55,39 @@
     display: block;
     height: 40px;
     width: 100%;
-    margin-bottom: var(--tiny-size);
+    margin-bottom: $tiny-size;
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 40px;
 
-    border: 1px solid var(--input-color);
+    border: 1px solid $input-color;
     box-sizing: border-box;
     border-radius: 4px;
     outline: none;
 
-    transition: border-color var(--time) var(--function);
+    transition: border-color $time $function;
 
     &:focus {
-        border-color: var(--blue-color);
+        border-color: $blue-color;
     }
 }
 
 .modal__icon {
     position: absolute;
-    color: var(--main-color);
+    color: $main-color;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 12px;
 
-    transition: fill var(--time) var(--function);
+    transition: fill $time $function;
 
     .modal__input:focus + & {
-        fill: var(--blue-color);
+        fill: $blue-color;
     }
 }
 
 .modal__icon--shadow {
-    filter: drop-shadow(0px 4px 4px var(--backdrop-mail));
+    filter: drop-shadow(0px 4px 4px $backdrop-mail);
 }
 
 .modal__comment {
@@ -97,29 +95,27 @@
     width: 100%;
     height: 120px;
     margin-bottom: 20px;
-    border: 1px solid var(--input-color);
+    border: 1px solid $input-color;
     box-sizing: border-box;
     border-radius: 4px;
     resize: none;
     outline: none;
-    color: var(--main-color);
+    color: $main-color;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
-}
 
-.modal__comment {
     &::placeholder {
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.01em;
-        color: var(--placeholder-color);
+        color: $placeholder-color;
     }
 
     &:focus {
-        border-color: var(--blue-color);
+        border-color: $blue-color;
     }
 }
 
@@ -129,7 +125,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: var(--small-size);
+    margin-bottom: $small-size;
 }
 
 .tick__box--disable {
@@ -137,15 +133,15 @@
     margin-right: 8.38px;
     width: 16px;
     height: 15px;
-    border: 2px solid var(--main-color);
+    border: 2px solid $main-color;
     border-radius: 4px;
 
     .tick__input:checked + & {
         background-image: url('../images/check.svg');
-        background-color: var(--blue-color);
+        background-color: $blue-color;
         background-size: contain;
         background-origin: border-box;
-        border-color: var(--blue-color);
+        border-color: $blue-color;
     }
 }
 
@@ -154,10 +150,10 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.03em;
-    color: var(--grey-color);
+    color: $grey-color;
 }
 
 .tick__link {
-    color: var(--blue-color);
+    color: $blue-color;
     text-decoration: underline;
 }

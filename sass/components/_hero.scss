@@ -7,16 +7,14 @@
     max-width: 480px;
     height: 400px;
 
-    background-color: var(--background-color);
+    background-color: $background-color;
     text-align: center;
-    color: var(--white-color);
+    color: $white-color;
     background-image: linear-gradient(
             to right,
-            var(--gradient-color),
-            var(--gradient-color)
-        ),
+            $gradient-color,
+            $gradient-color),
         url('/images/hero.jpg');
-    /*background-position: center;*/
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -25,41 +23,36 @@
         background-size: contain;
     }
 
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
         background-image: url('/images/hero-tablet.jpg');
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('/images/hero-tablet@2x.jpg');
+        }
     }
 
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-width: 768px) {
-        background-image: url('/images/hero-tablet@2x.jpg');
-        background-size: contain;
-    }
-
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-        background-image: url('/images/hero-desk.jpg');
+    @media screen and (min-width: $desktop) {
+        min-width: 1600px;
         padding-top: 200px;
         padding-bottom: 200px;
         height: 600px;
-    }
+        background-image: url('/images/hero-desk.jpg');
 
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-width: 1200px) {
-        background-image: url('/images/hero-desk@2x.jpg');
-        background-size: contain;
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url('/images/hero-desk@2x.jpg');
+        }
     }
-
 }
 
 .main__desk {
     padding-left: 45px;
     padding-right: 45px;
-    margin-bottom: var(--small-size);
+    margin-bottom: $small-size;
 
     font-weight: 900;
     font-size: 26px;
@@ -67,15 +60,15 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    @media screen and (min-width: 768px)  {
+    @media screen and (min-width: $tablet)  {
         padding-left: 189px;
         padding-right: 189px;
     }
 
-    @media screen and (min-width: 1200px)  {
+    @media screen and (min-width: $desktop)  {
         padding-left: 237px;
         padding-right: 237px;
         font-size: 44px;
-        line-height: 60px;
+        line-height: $big-size-mobile;
     }
 }

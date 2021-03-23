@@ -1,15 +1,15 @@
 .filter {
-    padding-top: 60px;
+    padding-top: $big-size-mobile;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         margin-bottom: 25px;
         justify-content: center;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 50px;
     }
 }
@@ -23,24 +23,24 @@
     border-radius: 4px;
     border: transparent;
 
-    background-color: var(--background-color-team);
+    background-color: $background-color-team;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     font-family: inherit;
 
-    transition: color var(--time) var(--function),
-        background-color var(--time) var(--function),
-        border-radius var(--time) var(--function),
-        box-shadow var(--time) var(--function);
+    transition: color $time $function,
+        background-color $time $function,
+        border-radius $time $function,
+        box-shadow $time $function;
 
     &:hover,
     &:focus {
-        color: var(--white-color);
-        background-color: var(--blue-color);
+        color: $white-color;
+        background-color: $blue-color;
         border-radius: 4px;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        box-shadow: 0px 3px 1px $backdrop-buttom,
             0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         outline: none;
     }
@@ -55,12 +55,16 @@
     &:nth-child(4) {
         margin-left: 0;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             margin-left: 8px;
         }
     }
 
     &:not(:nth-child(n + 4)) {
         margin-bottom: 15px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 0;
+        }
     }  
 }

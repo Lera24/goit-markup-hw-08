@@ -3,18 +3,20 @@
 .portfolio__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: $small-size;
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: var(--big-size); 
+    @media screen and (min-width: $desktop) {
+        margin-bottom: $big-size; 
     }
 }
 
 .portfolio__item {
     position: relative;
-    /*margin-left: var(--small-size);
-    margin-top: var(--small-size);*/
-    transition: box-shadow var(--time) var(--function);
+    transition: box-shadow $time $function;
+
+    &:not(:last-child) {
+    margin-bottom: $small-size;
+    }
 
     &:hover,
     &:focus {
@@ -23,24 +25,24 @@
         outline: none;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: calc((100% - 2 * 15px) / 2);
-        margin-right:  30px;
-        margin-bottom: 30px;
+        margin-right:  $small-size;
 
         &:nth-child(2n) {
             margin-right: 0;
         } 
-    }
-        &:not(:last-child) {
-        margin-bottom: 30px;
-    }
 
-    @media screen and (min-width: 1200px) {
+        &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+    @media screen and (min-width: $desktop) {
         width: calc((100% - 4 * 15px) / 3);
 
         &:nth-child(2n) {
-            margin-right: 30px;
+            margin-right: $small-size;
         } 
 
         &:nth-child(3n) {
@@ -55,14 +57,13 @@
 
 .portfolio__tumb {
     height: 294px;
-    /*margin-bottom: 30px;*/
     width: 450px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: 354px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 370px;
     }
 }
@@ -73,15 +74,14 @@
     object-fit: cover;
 }
 
-
 .portfolio__wrap {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-    border-right: 1px solid var(--card-border-color);
-    border-left: 1px solid var(--card-border-color);
-    border-bottom: 1px solid var(--card-border-color);
+    border-right: 1px solid $card-border-color;
+    border-left: 1px solid $card-border-color;
+    border-bottom: 1px solid $card-border-color;
 }
 
 .portfolio__title {
@@ -95,8 +95,8 @@
 .portfolio__subtitle {
     font-weight: 400;
     font-size: 16px;
-    line-height: var(--small-size);
-    color: var(--grey-color);
+    line-height: $small-size;
+    color: $grey-color;
 }
 
 .portfolio__desk {
@@ -112,14 +112,14 @@
     font-weight: 400px;
     font-size: 18px;
     line-height: 28px;
-    color: var(--white-color);
-    background-color: var(--blue-overflow);
+    color: $white-color;
+    background-color: $blue-overflow;
     width: 100%;
     top: 0;
     height: 294px;
 
-    transition: transform var(--time) var(--function),
-        opacity var(--time) var(--function);
+    transition: transform $time $function,
+        opacity $time $function;
 
     .portfolio__item:hover &,
     .portfolio__item:focus & {

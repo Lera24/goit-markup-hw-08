@@ -1,39 +1,33 @@
 .backdrop {
     position: fixed;
-    /*display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center;*/
+    justify-content: center;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: var(--color-backdrop);
-    padding-top: 93px;
-    padding-bottom: 93px;
-    padding-left: 15px;
-    padding-right: 15px;
+    background-color: $color-backdrop;
     overflow-y: scroll;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         padding-top: 208px;
         padding-bottom: 207px;
         padding-left: 159px;
         padding-right: 159px;
     }
-
 }
 
 .backdrop--hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    transition: background-color var(--time) var(--function),
-    opacity var(--time) var(--function);
+    transition: background-color $time $function,
+    opacity $time $function;
 }
 
 .backdrop__background {
     position: absolute;
     width: 450px;
-    /*height: 609px;*/
-    background-color: var(--white-color);
+    background-color: $white-color;
 }

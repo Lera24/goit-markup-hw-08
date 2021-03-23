@@ -8,78 +8,76 @@
     padding-right: 122px;
     padding-left: 122px;
 
-    @media screen and (min-width: 768px) {
-        padding-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+        padding-bottom: $small-size;
         padding-right: 74px;
         padding-left: 74px;
     }
 
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 30px;
+    @media screen and (min-width: $desktop) {
+        padding-bottom: $small-size;
         padding-right: 32px;
         padding-left: 32px;
     }
 }
-/**/
 
 .socials__item {
     &:not(:first-child) {
-        margin-left: 10px;
+        margin-left: $tiny-size;
     }
 }
-/**/
+
 .socials__link {
     display: flex;
     padding: 12px;
-    fill: var(--social-networks);
+    fill: $social-networks;
 
-    transition: border-radius var(--time) var(--function),
-        background-color var(--time) var(--function),
-        color var(--time) var(--function), fill var(--time) var(--function);
+    transition: border-radius $time $function,
+        background-color $time $function,
+        color $time $function, fill $time $function;
 
     &:hover,
     &:focus {
         border-radius: 50%;
-        background-color: rgba(33, 150, 243, 1);
-        color: var(--white-color);
+        background-color:  $blue-color;
+        color: $white-color;
         fill: currentColor;
         outline: none;
     }
 }
-/**/
+
 /*соцсети в футере*/
-/**/
+
 .socials-foot__title {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 700px;
     font-size: 14px;
     line-height: 16px;
-    color: var(--white-color);
+    color: $white-color;
 }
-/**/
-.socials-foot__link {
-    background-color: var(--graphite-color);
-    border-radius: 50%;
-    fill: var(--white-color);
 
-    transition: background-color var(--time) var(--function);
+.socials-foot__link {
+    background-color: $graphite-color;
+    border-radius: 50%;
+    fill: $white-color;
+
+    transition: background-color $time $function;
 
     &:hover,
     &:focus {
-        background-color: var(--blue-color);
+        background-color: $blue-color;
     }
 }
-/**/
+
 .socials-foot__socials {
     margin-bottom: 36px;
     padding-top: 0;
     padding-bottom: 0;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 0;
     }
 }
-/**/

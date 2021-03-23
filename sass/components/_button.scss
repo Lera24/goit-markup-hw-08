@@ -2,8 +2,8 @@
 
 .button {
     display: inline-block;
-    padding-top: var(--tiny-size);
-    padding-bottom: var(--tiny-size);
+    padding-top: $tiny-size;
+    padding-bottom: $tiny-size;
     padding-right: 32px;
     padding-left: 32px;
     border-radius: 4px;
@@ -12,11 +12,9 @@
 
     font-weight: 700;
     font-size: 16px;
-    line-height: var(--small-size);
-    color: var(--white-color);
-    background-color: var(--blue-color);
-
-    box-shadow: 0px 4px 4px var(--shadow-color);
+    line-height: $small-size;
+    color: $white-color;
+    background-color: $blue-color;
 }
 
 .button--center {

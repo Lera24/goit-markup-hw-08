@@ -1,11 +1,10 @@
 .skills {
     display: none;
 
-    @media screen and (min-width: 1200px)  {
+    @media screen and (min-width: $desktop)  {
         display: block;
     }
 }
-/**/
 
 .skills__title {
     font-weight: 700;
@@ -14,20 +13,17 @@
     text-align: center;
     margin-bottom: 50px;
 }
-/**/
 
 .skills__list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: var(--big-size);
+    padding-bottom: $big-size;
 }
-/**/
 
 .skills__item {
     position: relative;
     display: flex;
 }
-/**/
 
 .skills__subtitle {
     position: absolute;
@@ -42,7 +38,6 @@
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
-    color: var(--white-color);
-    background-color: var(--skills-color);
+    color: $white-color;
+    background-color: $skills-color;
 }
-/**/
