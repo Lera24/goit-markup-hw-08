@@ -4,7 +4,6 @@
     fill: $main-color;
     margin: 0;
     padding: 0;
-    margin-left: 276px;
     border: none;
     background-color: transparent;
 
@@ -56,6 +55,8 @@
 
 .head__mobile {
     display: flex;
+   /* justify-content: space-between;
+    width: 100%;*/
 }
 
 .mobile {
