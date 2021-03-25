@@ -25,50 +25,27 @@
 }
 
 .clients__list {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
-
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        justify-content: space-between;
-    }
+    margin-left: -$small-size;
+    margin-top: -$small-size;
 }
 
 
 .client__item {
-    width: calc((100% - 2 * 15px) / 2);
-    margin-right:  30px;
-    margin-bottom: 30px;
-
-    &:nth-child(2n) {
-        margin-right: 0;
-    }
-
-    &:nth-child(n + 4) {
-        margin-bottom: 0;
-    }
+    margin-left: $small-size;
+    margin-top: $small-size;
+    flex-basis: calc((480px - 4 * 15px) / 2);
 
     @media screen and (min-width: $tablet) {
-        width: calc((100% - 6 * 15px) / 3);
-        margin-right: auto;
-        
-        &:nth-child(2n) {
-            margin-right: auto;
-        }
-
-        &:nth-child(3n) {
-            margin-right: 0;
-        } 
+        flex-basis: calc((768px - 6 * 15px) / 3);   
     }
 
     @media screen and (min-width: $desktop) {
-        width: calc((100% - 12 * 15px) / 6);
-        margin-bottom: 0;
-        margin-right: 0;
-
-        &:nth-child(2n) {
-            margin-right: 0;
-        }
+        flex-basis: calc((1200px - 12 * 15px) / 6);   
     }
 }
 

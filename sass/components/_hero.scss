@@ -5,7 +5,8 @@
     margin-right: auto;
     margin-left: auto;
     height: 400px;
-    max-width: 480px;
+    max-width: 478px;
+    margin-bottom: $big-size-mobile;
 
     background-color: $background-color;
     text-align: center;
@@ -15,18 +16,18 @@
             $gradient-color,
             $gradient-color),
         url('../images/hero.jpg');
-
+    background-size: cover;
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         background-image: url('../images/hero@2x.png');
-        background-size: contain;
     }
 
     @media screen and (min-width: $tablet) {
         max-width: $tablet;
         background-image: url('../images/hero-tablet.jpg');
+
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -39,6 +40,7 @@
         max-width: 1600px;
         padding-top: 200px;
         padding-bottom: 200px;
+        margin-bottom: $big-size;
         height: 600px;
         background-image: url('../images/hero-desk.jpg');
 
